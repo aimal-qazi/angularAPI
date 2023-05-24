@@ -1,0 +1,86 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  list-style: none;
+  text-decoration: none;
+}
+.box {
+  border: 3px solid lightblue;
+  padding: 20px 10px;
+  border-radius: 10px;
+  margin-bottom: 70px;
+}
+.container {
+  margin: 50px 0;
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+.wrapper {
+  display: flex;
+  gap: 3rem;
+  align-items: center;
+}
+.wrapper .right h2 {
+  margin-bottom: 10px;
+}
+.wrapper .right h4 {
+  margin-bottom: 5px;
+}
+.status {
+  margin: 20px 0;
+}
+.status button {
+  padding: 5px 20px;
+  background-color: lightblue;
+  border-radius: 10px;
+  border: 0;
+  color: #eee;
+  font-weight: 600;
+}
+.wrapper .left {
+  width: 300px;
+  height: auto;
+}
+.wrapper .left img {
+  width: 100%;
+  border-radius: 10px;
+}
+.btns {
+  padding: 20px 0;
+  text-align: center;
+  margin-top: 20px;
+}
+.btns a:nth-child(1) {
+  padding: 10px 30px;
+  border-radius: 10px;
+  background-color: lightblue;
+  color: #fff;
+  font-weight: 600;
+  margin: 0 10px;
+}
+.btns a:nth-child(2) {
+  padding: 10px 30px;
+  border-radius: 10px;
+  background-color: orange;
+  color: #fff;
+  font-weight: 600;
+}
+.schedule {
+  margin-top: 50px;
+}
+.schedule h1 {
+  color: lightseagreen;
+}
+.schedule .wrappers {
+  padding: 20px 40px;
+  display: flex;
+  justify-content: space-between;
+}
+.schedule .wrappers .left p {
+  margin-bottom: 10px;
+}

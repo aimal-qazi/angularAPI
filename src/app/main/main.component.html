@@ -1,0 +1,690 @@
+<div class="container">
+  <ul>
+    <!-- 111111111 -->
+    <li *ngFor="let item of data; let i = index">
+      <div class="box" *ngIf="i === 0">
+        <div class="wrapper">
+          <div class="left">
+            <img src="../assets/nurse.jpg" alt="" />
+          </div>
+          <div class="right">
+            <h2>{{ item.name }}</h2>
+            <h4>Experience: {{ item.total_experience }}</h4>
+            <h4>ZSR-Nummer: {{ item.zsr_number }}</h4>
+            <p>Address: {{ item.address }}</p>
+          </div>
+        </div>
+        <div class="status">
+          <h3>Status: <button>Available</button></h3>
+        </div>
+        <div class="btns">
+          <a routerLink="profile">View Profile</a>
+          <a routerLink="#" (click)="toggle0()">Schedule visit</a>
+        </div>
+
+        <div class="schedule" *ngIf="display0 && i === 0">
+          <h1>Schedules</h1>
+          <div class="dates">
+            <div class="wrappers">
+              <div class="left">
+                <p>Friday, March 20, 2020 - Tuesday,<br />March</p>
+                <p>
+                  {{ item.schedules[0].start_time }} -
+                  {{ item.schedules[0].end_time }}
+                </p>
+              </div>
+              <div class="right">
+                <p>Status: {{ item.schedules[0].status }}</p>
+              </div>
+            </div>
+            <hr />
+            <div class="wrappers">
+              <div class="left">
+                <p>Friday, March 20, 2020 - Tuesday,<br />March</p>
+                <p>
+                  {{ item.schedules[0].start_time }} -
+                  {{ item.schedules[0].end_time }}
+                </p>
+              </div>
+              <div class="right">
+                <p>Status: {{ item.schedules[0].status }}</p>
+              </div>
+            </div>
+            <hr />
+            <div class="wrappers">
+              <div class="left">
+                <p>Friday, March 20, 2020 - Tuesday,<br />March</p>
+                <p>
+                  {{ item.schedules[0].start_time }} -
+                  {{ item.schedules[0].end_time }}
+                </p>
+              </div>
+              <div class="right">
+                <p>Status: {{ item.schedules[0].status }}</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </li>
+    <!-- 22222222 -->
+    <li *ngFor="let item of data; let i = index">
+      <div class="box" *ngIf="i === 1">
+        <div class="wrapper">
+          <div class="left">
+            <img src="../assets/2.jpg" alt="" />
+          </div>
+          <div class="right">
+            <h2>{{ item.name }}</h2>
+            <h4>Experience: {{ item.total_experience }}</h4>
+            <h4>ZSR-Nummer: {{ item.zsr_number }}</h4>
+            <p>Address: {{ item.address }}</p>
+          </div>
+        </div>
+        <div class="status">
+          <h3>Status: <button>Available</button></h3>
+        </div>
+        <div class="btns">
+          <a routerLink="profile">View Profile</a>
+          <a routerLink="#" (click)="toggle1()">Schedule visit</a>
+        </div>
+
+        <div class="schedule" *ngIf="display1 && i === 1">
+          <h1>Schedules</h1>
+          <div class="dates">
+            <div class="wrappers">
+              <div class="left">
+                <p>Friday, March 20, 2020 - Tuesday,<br />March</p>
+                <p>
+                  {{ item.schedules[0].start_time }} -
+                  {{ item.schedules[0].end_time }}
+                </p>
+              </div>
+              <div class="right">
+                <p>Status: {{ item.schedules[0].status }}</p>
+              </div>
+            </div>
+            <hr />
+            <div class="wrappers">
+              <div class="left">
+                <p>Friday, March 20, 2020 - Tuesday,<br />March</p>
+                <p>
+                  {{ item.schedules[0].start_time }} -
+                  {{ item.schedules[0].end_time }}
+                </p>
+              </div>
+              <div class="right">
+                <p>Status: {{ item.schedules[0].status }}</p>
+              </div>
+            </div>
+            <hr />
+            <div class="wrappers">
+              <div class="left">
+                <p>Friday, March 20, 2020 - Tuesday,<br />March</p>
+                <p>
+                  {{ item.schedules[0].start_time }} -
+                  {{ item.schedules[0].end_time }}
+                </p>
+              </div>
+              <div class="right">
+                <p>Status: {{ item.schedules[0].status }}</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </li>
+
+    <!-- 33333333 -->
+
+    <li *ngFor="let item of data; let i = index">
+      <div class="box" *ngIf="i === 1">
+        <div class="wrapper">
+          <div class="left">
+            <img src="../assets/3.jpg" alt="" />
+          </div>
+          <div class="right">
+            <h2>{{ item.name }}</h2>
+            <h4>Experience: {{ item.total_experience }}</h4>
+            <h4>ZSR-Nummer: {{ item.zsr_number }}</h4>
+            <p>Address: {{ item.address }}</p>
+          </div>
+        </div>
+        <div class="status">
+          <h3>Status: <button>Available</button></h3>
+        </div>
+        <div class="btns">
+          <a routerLink="profile">View Profile</a>
+          <a routerLink="#" (click)="toggle2()">Schedule visit</a>
+        </div>
+
+        <div class="schedule" *ngIf="display2 && i === 1">
+          <h1>Schedules</h1>
+          <div class="dates">
+            <div class="wrappers">
+              <div class="left">
+                <p>Friday, March 20, 2020 - Tuesday,<br />March</p>
+                <p>
+                  {{ item.schedules[0].start_time }} -
+                  {{ item.schedules[0].end_time }}
+                </p>
+              </div>
+              <div class="right">
+                <p>Status: {{ item.schedules[0].status }}</p>
+              </div>
+            </div>
+            <hr />
+            <div class="wrappers">
+              <div class="left">
+                <p>Friday, March 20, 2020 - Tuesday,<br />March</p>
+                <p>
+                  {{ item.schedules[0].start_time }} -
+                  {{ item.schedules[0].end_time }}
+                </p>
+              </div>
+              <div class="right">
+                <p>Status: {{ item.schedules[0].status }}</p>
+              </div>
+            </div>
+            <hr />
+            <div class="wrappers">
+              <div class="left">
+                <p>Friday, March 20, 2020 - Tuesday,<br />March</p>
+                <p>
+                  {{ item.schedules[0].start_time }} -
+                  {{ item.schedules[0].end_time }}
+                </p>
+              </div>
+              <div class="right">
+                <p>Status: {{ item.schedules[0].status }}</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </li>
+
+    <!-- 4444444444 -->
+
+    <li *ngFor="let item of data; let i = index">
+      <div class="box" *ngIf="i === 1">
+        <div class="wrapper">
+          <div class="left">
+            <img src="../assets/nurse.jpg" alt="" />
+          </div>
+          <div class="right">
+            <h2>{{ item.name }}</h2>
+            <h4>Experience: {{ item.total_experience }}</h4>
+            <h4>ZSR-Nummer: {{ item.zsr_number }}</h4>
+            <p>Address: {{ item.address }}</p>
+          </div>
+        </div>
+        <div class="status">
+          <h3>Status: <button>Available</button></h3>
+        </div>
+        <div class="btns">
+          <a routerLink="profile">View Profile</a>
+          <a routerLink="#" (click)="toggle3()">Schedule visit</a>
+        </div>
+
+        <div class="schedule" *ngIf="display3 && i === 1">
+          <h1>Schedules</h1>
+          <div class="dates">
+            <div class="wrappers">
+              <div class="left">
+                <p>Friday, March 20, 2020 - Tuesday,<br />March</p>
+                <p>
+                  {{ item.schedules[0].start_time }} -
+                  {{ item.schedules[0].end_time }}
+                </p>
+              </div>
+              <div class="right">
+                <p>Status: {{ item.schedules[0].status }}</p>
+              </div>
+            </div>
+            <hr />
+            <div class="wrappers">
+              <div class="left">
+                <p>Friday, March 20, 2020 - Tuesday,<br />March</p>
+                <p>
+                  {{ item.schedules[0].start_time }} -
+                  {{ item.schedules[0].end_time }}
+                </p>
+              </div>
+              <div class="right">
+                <p>Status: {{ item.schedules[0].status }}</p>
+              </div>
+            </div>
+            <hr />
+            <div class="wrappers">
+              <div class="left">
+                <p>Friday, March 20, 2020 - Tuesday,<br />March</p>
+                <p>
+                  {{ item.schedules[0].start_time }} -
+                  {{ item.schedules[0].end_time }}
+                </p>
+              </div>
+              <div class="right">
+                <p>Status: {{ item.schedules[0].status }}</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </li>
+
+    <!-- 55555555 -->
+
+    <li *ngFor="let item of data; let i = index">
+      <div class="box" *ngIf="i === 1">
+        <div class="wrapper">
+          <div class="left">
+            <img src="../assets/3.jpg" alt="" />
+          </div>
+          <div class="right">
+            <h2>{{ item.name }}</h2>
+            <h4>Experience: {{ item.total_experience }}</h4>
+            <h4>ZSR-Nummer: {{ item.zsr_number }}</h4>
+            <p>Address: {{ item.address }}</p>
+          </div>
+        </div>
+        <div class="status">
+          <h3>Status: <button>Available</button></h3>
+        </div>
+        <div class="btns">
+          <a routerLink="profile">View Profile</a>
+          <a routerLink="#" (click)="toggle4()">Schedule visit</a>
+        </div>
+
+        <div class="schedule" *ngIf="display4 && i === 1">
+          <h1>Schedules</h1>
+          <div class="dates">
+            <div class="wrappers">
+              <div class="left">
+                <p>Friday, March 20, 2020 - Tuesday,<br />March</p>
+                <p>
+                  {{ item.schedules[0].start_time }} -
+                  {{ item.schedules[0].end_time }}
+                </p>
+              </div>
+              <div class="right">
+                <p>Status: {{ item.schedules[0].status }}</p>
+              </div>
+            </div>
+            <hr />
+            <div class="wrappers">
+              <div class="left">
+                <p>Friday, March 20, 2020 - Tuesday,<br />March</p>
+                <p>
+                  {{ item.schedules[0].start_time }} -
+                  {{ item.schedules[0].end_time }}
+                </p>
+              </div>
+              <div class="right">
+                <p>Status: {{ item.schedules[0].status }}</p>
+              </div>
+            </div>
+            <hr />
+            <div class="wrappers">
+              <div class="left">
+                <p>Friday, March 20, 2020 - Tuesday,<br />March</p>
+                <p>
+                  {{ item.schedules[0].start_time }} -
+                  {{ item.schedules[0].end_time }}
+                </p>
+              </div>
+              <div class="right">
+                <p>Status: {{ item.schedules[0].status }}</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </li>
+
+    <!-- 6666666666 -->
+
+    <li *ngFor="let item of data; let i = index">
+      <div class="box" *ngIf="i === 1">
+        <div class="wrapper">
+          <div class="left">
+            <img src="../assets/nurse.jpg" alt="" />
+          </div>
+          <div class="right">
+            <h2>{{ item.name }}</h2>
+            <h4>Experience: {{ item.total_experience }}</h4>
+            <h4>ZSR-Nummer: {{ item.zsr_number }}</h4>
+            <p>Address: {{ item.address }}</p>
+          </div>
+        </div>
+        <div class="status">
+          <h3>Status: <button>Available</button></h3>
+        </div>
+        <div class="btns">
+          <a routerLink="profile">View Profile</a>
+          <a routerLink="#" (click)="toggle5()">Schedule visit</a>
+        </div>
+
+        <div class="schedule" *ngIf="display5 && i === 1">
+          <h1>Schedules</h1>
+          <div class="dates">
+            <div class="wrappers">
+              <div class="left">
+                <p>Friday, March 20, 2020 - Tuesday,<br />March</p>
+                <p>
+                  {{ item.schedules[0].start_time }} -
+                  {{ item.schedules[0].end_time }}
+                </p>
+              </div>
+              <div class="right">
+                <p>Status: {{ item.schedules[0].status }}</p>
+              </div>
+            </div>
+            <hr />
+            <div class="wrappers">
+              <div class="left">
+                <p>Friday, March 20, 2020 - Tuesday,<br />March</p>
+                <p>
+                  {{ item.schedules[0].start_time }} -
+                  {{ item.schedules[0].end_time }}
+                </p>
+              </div>
+              <div class="right">
+                <p>Status: {{ item.schedules[0].status }}</p>
+              </div>
+            </div>
+            <hr />
+            <div class="wrappers">
+              <div class="left">
+                <p>Friday, March 20, 2020 - Tuesday,<br />March</p>
+                <p>
+                  {{ item.schedules[0].start_time }} -
+                  {{ item.schedules[0].end_time }}
+                </p>
+              </div>
+              <div class="right">
+                <p>Status: {{ item.schedules[0].status }}</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </li>
+
+    <!-- 777777777 -->
+
+    <li *ngFor="let item of data; let i = index">
+      <div class="box" *ngIf="i === 1">
+        <div class="wrapper">
+          <div class="left">
+            <img src="../assets/2.jpg" alt="" />
+          </div>
+          <div class="right">
+            <h2>{{ item.name }}</h2>
+            <h4>Experience: {{ item.total_experience }}</h4>
+            <h4>ZSR-Nummer: {{ item.zsr_number }}</h4>
+            <p>Address: {{ item.address }}</p>
+          </div>
+        </div>
+        <div class="status">
+          <h3>Status: <button>Available</button></h3>
+        </div>
+        <div class="btns">
+          <a routerLink="profile">View Profile</a>
+          <a routerLink="#" (click)="toggle6()">Schedule visit</a>
+        </div>
+
+        <div class="schedule" *ngIf="display6 && i === 1">
+          <h1>Schedules</h1>
+          <div class="dates">
+            <div class="wrappers">
+              <div class="left">
+                <p>Friday, March 20, 2020 - Tuesday,<br />March</p>
+                <p>
+                  {{ item.schedules[0].start_time }} -
+                  {{ item.schedules[0].end_time }}
+                </p>
+              </div>
+              <div class="right">
+                <p>Status: {{ item.schedules[0].status }}</p>
+              </div>
+            </div>
+            <hr />
+            <div class="wrappers">
+              <div class="left">
+                <p>Friday, March 20, 2020 - Tuesday,<br />March</p>
+                <p>
+                  {{ item.schedules[0].start_time }} -
+                  {{ item.schedules[0].end_time }}
+                </p>
+              </div>
+              <div class="right">
+                <p>Status: {{ item.schedules[0].status }}</p>
+              </div>
+            </div>
+            <hr />
+            <div class="wrappers">
+              <div class="left">
+                <p>Friday, March 20, 2020 - Tuesday,<br />March</p>
+                <p>
+                  {{ item.schedules[0].start_time }} -
+                  {{ item.schedules[0].end_time }}
+                </p>
+              </div>
+              <div class="right">
+                <p>Status: {{ item.schedules[0].status }}</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </li>
+
+    <!-- 888888888 -->
+
+    <li *ngFor="let item of data; let i = index">
+      <div class="box" *ngIf="i === 1">
+        <div class="wrapper">
+          <div class="left">
+            <img src="../assets/nurse.jpg" alt="" />
+          </div>
+          <div class="right">
+            <h2>{{ item.name }}</h2>
+            <h4>Experience: {{ item.total_experience }}</h4>
+            <h4>ZSR-Nummer: {{ item.zsr_number }}</h4>
+            <p>Address: {{ item.address }}</p>
+          </div>
+        </div>
+        <div class="status">
+          <h3>Status: <button>Available</button></h3>
+        </div>
+        <div class="btns">
+          <a routerLink="profile">View Profile</a>
+          <a routerLink="#" (click)="toggle7()">Schedule visit</a>
+        </div>
+
+        <div class="schedule" *ngIf="display7 && i === 1">
+          <h1>Schedules</h1>
+          <div class="dates">
+            <div class="wrappers">
+              <div class="left">
+                <p>Friday, March 20, 2020 - Tuesday,<br />March</p>
+                <p>
+                  {{ item.schedules[0].start_time }} -
+                  {{ item.schedules[0].end_time }}
+                </p>
+              </div>
+              <div class="right">
+                <p>Status: {{ item.schedules[0].status }}</p>
+              </div>
+            </div>
+            <hr />
+            <div class="wrappers">
+              <div class="left">
+                <p>Friday, March 20, 2020 - Tuesday,<br />March</p>
+                <p>
+                  {{ item.schedules[0].start_time }} -
+                  {{ item.schedules[0].end_time }}
+                </p>
+              </div>
+              <div class="right">
+                <p>Status: {{ item.schedules[0].status }}</p>
+              </div>
+            </div>
+            <hr />
+            <div class="wrappers">
+              <div class="left">
+                <p>Friday, March 20, 2020 - Tuesday,<br />March</p>
+                <p>
+                  {{ item.schedules[0].start_time }} -
+                  {{ item.schedules[0].end_time }}
+                </p>
+              </div>
+              <div class="right">
+                <p>Status: {{ item.schedules[0].status }}</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </li>
+
+    <!-- 99999999999 -->
+
+    <li *ngFor="let item of data; let i = index">
+      <div class="box" *ngIf="i === 1">
+        <div class="wrapper">
+          <div class="left">
+            <img src="../assets/2.jpg" alt="" />
+          </div>
+          <div class="right">
+            <h2>{{ item.name }}</h2>
+            <h4>Experience: {{ item.total_experience }}</h4>
+            <h4>ZSR-Nummer: {{ item.zsr_number }}</h4>
+            <p>Address: {{ item.address }}</p>
+          </div>
+        </div>
+        <div class="status">
+          <h3>Status: <button>Available</button></h3>
+        </div>
+        <div class="btns">
+          <a routerLink="profile">View Profile</a>
+          <a routerLink="#" (click)="toggle8()">Schedule visit</a>
+        </div>
+
+        <div class="schedule" *ngIf="display8 && i === 1">
+          <h1>Schedules</h1>
+          <div class="dates">
+            <div class="wrappers">
+              <div class="left">
+                <p>Friday, March 20, 2020 - Tuesday,<br />March</p>
+                <p>
+                  {{ item.schedules[0].start_time }} -
+                  {{ item.schedules[0].end_time }}
+                </p>
+              </div>
+              <div class="right">
+                <p>Status: {{ item.schedules[0].status }}</p>
+              </div>
+            </div>
+            <hr />
+            <div class="wrappers">
+              <div class="left">
+                <p>Friday, March 20, 2020 - Tuesday,<br />March</p>
+                <p>
+                  {{ item.schedules[0].start_time }} -
+                  {{ item.schedules[0].end_time }}
+                </p>
+              </div>
+              <div class="right">
+                <p>Status: {{ item.schedules[0].status }}</p>
+              </div>
+            </div>
+            <hr />
+            <div class="wrappers">
+              <div class="left">
+                <p>Friday, March 20, 2020 - Tuesday,<br />March</p>
+                <p>
+                  {{ item.schedules[0].start_time }} -
+                  {{ item.schedules[0].end_time }}
+                </p>
+              </div>
+              <div class="right">
+                <p>Status: {{ item.schedules[0].status }}</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </li>
+
+    <!-- 10101010 -->
+
+    <li *ngFor="let item of data; let i = index">
+      <div class="box" *ngIf="i === 1">
+        <div class="wrapper">
+          <div class="left">
+            <img src="../assets/nurse.jpg" alt="" />
+          </div>
+          <div class="right">
+            <h2>{{ item.name }}</h2>
+            <h4>Experience: {{ item.total_experience }}</h4>
+            <h4>ZSR-Nummer: {{ item.zsr_number }}</h4>
+            <p>Address: {{ item.address }}</p>
+          </div>
+        </div>
+        <div class="status">
+          <h3>Status: <button>Available</button></h3>
+        </div>
+        <div class="btns">
+          <a routerLink="profile">View Profile</a>
+          <a routerLink="#" (click)="toggle9()">Schedule visit</a>
+        </div>
+
+        <div class="schedule" *ngIf="display9 && i === 1">
+          <h1>Schedules</h1>
+          <div class="dates">
+            <div class="wrappers">
+              <div class="left">
+                <p>Friday, March 20, 2020 - Tuesday,<br />March</p>
+                <p>
+                  {{ item.schedules[0].start_time }} -
+                  {{ item.schedules[0].end_time }}
+                </p>
+              </div>
+              <div class="right">
+                <p>Status: {{ item.schedules[0].status }}</p>
+              </div>
+            </div>
+            <hr />
+            <div class="wrappers">
+              <div class="left">
+                <p>Friday, March 20, 2020 - Tuesday,<br />March</p>
+                <p>
+                  {{ item.schedules[0].start_time }} -
+                  {{ item.schedules[0].end_time }}
+                </p>
+              </div>
+              <div class="right">
+                <p>Status: {{ item.schedules[0].status }}</p>
+              </div>
+            </div>
+            <hr />
+            <div class="wrappers">
+              <div class="left">
+                <p>Friday, March 20, 2020 - Tuesday,<br />March</p>
+                <p>
+                  {{ item.schedules[0].start_time }} -
+                  {{ item.schedules[0].end_time }}
+                </p>
+              </div>
+              <div class="right">
+                <p>Status: {{ item.schedules[0].status }}</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </li>
+  </ul>
+</div>
